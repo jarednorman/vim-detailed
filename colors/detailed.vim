@@ -597,10 +597,10 @@ fun! s:detailed_colors()
 
   call s:fg('detailedInstanceVariable', 'blue75')
 
-  call s:fgbg('detailedString', 'purple125', 'gray233')
-  call s:fgbg('detailedInterpolatedString', 'purple126', 'gray233')
-  call s:bold_fgbg('detailedExecutedString', 'green34', 'purple53')
-  call s:fgbg('detailedRawString', 'red160', 'gray233')
+  call s:fg('detailedString', 'purple125')
+  call s:fg('detailedInterpolatedString', 'purple126')
+  call s:bold_fg('detailedExecutedString', 'green34')
+  call s:fg('detailedRawString', 'red160')
   call s:fg('detailedStringDelimiter', 'blue33')
   call s:fg('detailedInterpolationDelimiter', 'gray244')
 
@@ -612,7 +612,7 @@ fun! s:detailed_colors()
   call s:fg('detailedRegexpAnchor', 'purple90')
   call s:fg('detailedRegexpDot', 'green34')
   call s:bold_fg('detailedRegexpDelimiter', 'red88')
-  call s:fgbg('rubyRegexp', 'red160', 'gray233')
+  call s:fg('rubyRegexp', 'red160')
   call s:fg('detailedASCIICode', 'green71')
 
   call s:fg('detailedPseudoVariable', 'purple125')
@@ -657,9 +657,9 @@ fun! s:detailed_colors()
   "* `fail`/`raise`/`exit` were yellow by default, but here a more warny orange.
   call s:fg('Exception', 'orange208')
   "* class `@@vars` get ugly, cautionary color: they are troublesome.
-  call s:fgbg('rubyClassVariable', 'blue75', 'red52')
+  call s:fg('rubyClassVariable', 'blue75')
   "* global `$vars` also get a bit of ugliness. Everyone knows they're iffy.
-  call s:fgbg('rubyGlobalVariable', 'red161', 'gray234')
+  call s:fg('rubyGlobalVariable', 'red161')
 
   " rails.vim niceness:
   call s:fg('detailedRailsARAssociationMethod', 'teal50')
